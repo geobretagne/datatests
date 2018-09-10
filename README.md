@@ -2,7 +2,12 @@
 Script python permettant de tester des données au format shape sur la base de tests décris dans un fichier de configuration.
 
 ## Principe :
-le script est lancé avec un argument en entré qui correspond dossier où sont stockés les fichiers à analyser. Tous les tests à effectuer sont décrits dans un fichier json qui doit avoir la forme suivante :
+le script est lancé avec 2 arguments en entré qui correspondent respectivement au dossier où sont stockés les fichiers à analyser et au fichier de configuration (tests) à utiliser.
+
+Tous les tests à effectuer sont décrits dans un fichier json qui doit avoir la forme suivante :
+	> configuration.json
+
+
 
 
     {
