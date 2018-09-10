@@ -25,11 +25,11 @@ En fonction de chaque test, des paramètres supplémentaires sont disponibles
 
 ## 1 - Test sur la présence champs obligatoires :
 
-Le paramètre **field** est une liste de champs
+Le paramètre **fields** est une liste de champs
  
      {
        	"type": "requery_field",
-       	"field": ["champ1", champ2"]
+       	"fields": ["champ1", champ2"]
      }
 
 ## 2 - Test sur le nombre d'enregistrements
@@ -52,23 +52,23 @@ Le paramètre **field** précise le champ concerné.
 
 ## 4 - Test sur l'absence de valeurs nulles. 
 
-Le paramètre **critere** est une expression de type SQL WHERE. Il s'agit d'un paramètre obligatoire. Si on ne souhaite pas de filtre, il faut mettre `criteres : ""`
+Le paramètre **critere** est une expression de type SQL WHERE. Il s'agit d'un paramètre obligatoire. Si on ne souhaite pas de filtre, il faut mettre `critere : ""`
 Le paramètre **field** est une liste de champs.
     
     {
        	"type": "notnull",
        	"field": ["champ1", champ2"],
-       	"criteres" : "champ3 = 'BB1'"
+       	"critere" : "champ3 = 'BB1'"
      }
 
 ## 5 - Test sur les valeurs autorisées d'un champ
 
-Le paramètre **critere** est une expression de type SQL WHERE. Il s'agit d'un paramètre obligatoire. Si on ne souhaite pas de filtre, il faut mettre `criteres : ""`
+Le paramètre **critere** est une expression de type SQL WHERE. Il s'agit d'un paramètre obligatoire. Si on ne souhaite pas de filtre, il faut mettre `critere : ""`
 Le paramètre **rules** est une liste de champs / valeurs
     
     {
        	"type": "allowedvalues",       	
-       	"criteres" : "champ3 = 'BB1'",
+       	"critere" : "champ3 = 'BB1'",
        	"rules" : [{
 	       	"field": "champ4",
 	       	"values": ["1", "2", "3"]
