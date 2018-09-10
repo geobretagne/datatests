@@ -53,11 +53,11 @@ Le paramètre **field** précise le champ concerné.
 ## 4 - Test sur l'absence de valeurs nulles. 
 
 Le paramètre **critere** est une expression de type SQL WHERE. Il s'agit d'un paramètre obligatoire. Si on ne souhaite pas de filtre, il faut mettre `critere : ""`
-Le paramètre **field** est une liste de champs.
+Le paramètre **fields** est une liste de champs.
     
     {
        	"type": "notnull",
-       	"field": ["champ1", champ2"],
+       	"fields": ["champ1", champ2"],
        	"critere" : "champ3 = 'BB1'"
      }
 
