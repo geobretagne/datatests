@@ -4,9 +4,8 @@ Script python permettant de tester des données au format shape sur la base de t
 ## Principe :
 le script est lancé avec 2 arguments en entré qui correspondent respectivement au dossier où sont stockés les fichiers à analyser et au fichier de configuration (tests) à utiliser.
 
-Tous les tests à effectuer sont décrits dans un fichier json qui doit avoir la forme suivante :
-	
-	> configuration.json
+Tous les tests à effectuer sont décrits dans un fichier json qui doit avoir la forme suivante 
+> Exemple : configuration.json
 
 
 
