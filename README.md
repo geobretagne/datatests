@@ -25,7 +25,7 @@ En fonction de chaque test, des paramètres supplémentaires sont disponibles
 
 ## 1 - Test sur la présence champs obligatoires :
 
-Le paramètre **fields** est une liste de champs
+Le paramètre **field** est une liste de champs
  
      {
        	"type": "requery_field",
@@ -42,15 +42,18 @@ Le paramètre **fields** est une liste de champs
 ## 3 - Test sur le type de données. 
 
 Le paramètre **datatype** est un type OGRFieldType. Les valeurs possibles sont : String, Integer, Integer64, Real, Date, Time.
+Le paramètre **field** précise le champ concerné.
     
     {
        	"type": "datatype",
+	"field": "champ1",
        	"datatype": "String"
      }
 
 ## 4 - Test sur l'absence de valeurs nulles. 
 
 Le paramètre **critere** est une expression de type SQL WHERE. Il s'agit d'un paramètre obligatoire. Si on ne souhaite pas de filtre, il faut mettre `criteres : ""`
+Le paramètre **field** est une liste de champs.
     
     {
        	"type": "notnull",
@@ -61,7 +64,7 @@ Le paramètre **critere** est une expression de type SQL WHERE. Il s'agit d'un p
 ## 5 - Test sur les valeurs autorisées d'un champ
 
 Le paramètre **critere** est une expression de type SQL WHERE. Il s'agit d'un paramètre obligatoire. Si on ne souhaite pas de filtre, il faut mettre `criteres : ""`
-Le paramètre rules est une liste de champs / valeurs
+Le paramètre **rules** est une liste de champs / valeurs
     
     {
        	"type": "allowedvalues",       	
