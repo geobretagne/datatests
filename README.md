@@ -80,3 +80,8 @@ Le paramètre **field** indique le nom du champ à tester.
        	"type": "uniquevalues",
        	"field": "champ0"
      }
+     
+     
+## Prérequis
+
+le script python utilise la librairie gdal/ogr qui doit être installée.
