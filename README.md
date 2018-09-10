@@ -1,30 +1,35 @@
 # datatests
 Script python permettant de tester des données au format shape sur la base de tests décris dans un fichier de configuration.
 
-Principe : le script est lancé avec un argument en entré qui correspond dossier où sont stockés les fichiers à analyser. Tous les tests à effectuer sont décrits dans un fichier json qui doit avoir la forme suivante :
+## Principe :
+le script est lancé avec un argument en entré qui correspond dossier où sont stockés les fichiers à analyser. Tous les tests à effectuer sont décrits dans un fichier json qui doit avoir la forme suivante :
 
-`{
-	"tests": [
-			{
-				"id": "Test1",
-				"nom": "Présence des champs obligatoires",
-				"type": "requery_field",
-				"fields": ["champ1", "champ2"]
-			},
-			{
-				"id": "Test2",
-				"nom": "Nombre d'enregistrements supérieur à 100",			
-				"type": "featurecount",
-				"nombre": 100
-			}
-		]
-}`
+
+    {
+    	"tests": [
+    			{
+    				"id": "Test1",
+    				"nom": "Présence des champs obligatoires",
+    				"type": "requery_field",
+    				"fields": ["champ1", "champ2"]
+    			},
+    			{
+    				"id": "Test2",
+    				"nom": "Nombre d'enregistrements supérieur à 100",			
+    				"type": "featurecount",
+    				"nombre": 100
+    			}
+    		]
+    }
+
 
 
 
 exemple `script.py dossier_a_tester fichier_de_tests.json`
 
 L'exécution du script retourne un fichier rapport au format html.
+
+## Paramétrage :
 
 Il existe 6 types de tests. Les tests sont décrits dans fichier json appelé par le script
 
