@@ -52,6 +52,7 @@ for fichier in fichiers :
     write(log, "RAPPORT DU " + strftime("%d-%m-%Y %H:%M:%S", localtime()), "h4")
     write(log, "ANALYSE DE " + os.path.basename(fichier), "h1") 
     write(log, "Projection de la couche : " + str(spatialRef.GetAttrValue("PROJCS", 0)), "p")
+    write(log, str(featureCount) + u"Entités trouvées dans la couche", "p") 
 
     fields_shape =[]
     fields_types = {}
