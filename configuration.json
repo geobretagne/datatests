@@ -93,12 +93,12 @@
 		},
 		{
 			"id": "Test4.3",
-			"nom": "Vérification que la valeur du champ AN_IMPLANT est comprise entre 2015 et 2020 si TYPE_PROG = BB2",
+			"nom": "Vérification que la valeur du champ AN_IMPLANT est comprise entre 2015 et 2022 si TYPE_PROG = BB2",
 			"critere": "TYPE_PROG = 'BB2'",
 			"type": "allowedvalues",
 			"rules": [{
 				"field": "AN_IMPLANT",
-				"values": ["2015", "2016", "2017", "2018", "2019", "2020"]
+				"values": ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"]
 			}]
 		}
 	]
